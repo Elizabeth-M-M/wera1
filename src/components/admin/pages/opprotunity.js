@@ -8,7 +8,7 @@ const Opprotunity = () => {
   let { id } = useParams();
   // If id is present, fetch the job details and use the data
   useEffect(() => {
-    fetch(`https://rails-d0vf.onrender.com/opportunities/${id}`).then((res) => {
+    fetch(`https://wera.onrender.com/opportunities/${id}`).then((res) => {
       if (res.ok) {
         res.json().then((data) => {
           console.log(data);

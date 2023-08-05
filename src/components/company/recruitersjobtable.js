@@ -132,7 +132,7 @@ const RecruiterJobsTable = ({ employer }) => {
   // };
   // useEffect(() => {
   //    setLoading(true);
-  //     fetch(`https://rails-d0vf.onrender.com/employers/${employer_id}`)
+  //     fetch(`https://wera.onrender.com/employers/${employer_id}`)
   //       .then((res) => res.json())
   //       .then((data) => {
   //         setJobsData(data.opportunities);
@@ -144,7 +144,7 @@ const RecruiterJobsTable = ({ employer }) => {
   useEffect(() => {
     setLoading(true);
     if (id !== null) {
-      fetch(`https://rails-d0vf.onrender.com/employers/${id}`)
+      fetch(`https://wera.onrender.com/employers/${id}`)
         .then((res) => res.json())
         .then((data) => {
           console.log(data);

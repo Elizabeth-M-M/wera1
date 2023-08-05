@@ -32,7 +32,7 @@ const Experience = () => {
   // let applications = profileData.applications;
   useEffect(() => {
     if (id !== null) {
-      fetch(`https://rails-d0vf.onrender.com/profiles/${id}/experiences`).then(
+      fetch(`https://wera.onrender.com/profiles/${id}/experiences`).then(
         (res) => {
           if (res.ok) {
             res.json().then((data) => {
@@ -53,7 +53,7 @@ const Experience = () => {
 
     try {
       const response = await axios.post(
-        `https://rails-d0vf.onrender.com/profiles/${id}/experiences/`,
+        `https://wera.onrender.com/profiles/${id}/experiences/`,
         formData
       );
       setExperienceData([...experienceData, response.data]);
@@ -70,7 +70,7 @@ const Experience = () => {
   async function handleDeleteExperience() {
     try {
       await axios.delete(
-        `https://rails-d0vf.onrender.com/profiles/${id}/experiences/${id}`
+        `https://wera.onrender.com/profiles/${id}/experiences/${id}`
       );
       setExperienceData(
         experienceData.filter((experience) => experience.id !== id)
@@ -83,7 +83,7 @@ const Experience = () => {
   async function handleUpdateExperience(updatedData) {
     try {
       const response = await axios.patch(
-        `https://rails-d0vf.onrender.com/profiles/${id}/experiences/${id}`,
+        `https://wera.onrender.com/profiles/${id}/experiences/${id}`,
         updatedData
       );
       setExperienceData(

@@ -15,7 +15,7 @@ const JobsApplied = () => {
   // If id is present, fetch the jobseeker details and get the applications made
   useEffect(() => {
     if (id !== null) {
-      fetch(`https://rails-d0vf.onrender.com/profiles/${id}`).then((res) => {
+      fetch(`https://wera.onrender.com/profiles/${id}`).then((res) => {
         if (res.ok) {
           res.json().then((data) => {
             setApplications(data.applications);

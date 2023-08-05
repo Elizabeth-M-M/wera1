@@ -32,7 +32,7 @@ const Education = () => {
   // let applications = profileData.applications;
   useEffect(() => {
     if (id !== null) {
-      fetch(`https://rails-d0vf.onrender.com/profiles/${id}/educations`).then(
+      fetch(`https://wera.onrender.com/profiles/${id}/educations`).then(
         (res) => {
           if (res.ok) {
             res.json().then((data) => {
@@ -53,7 +53,7 @@ const Education = () => {
 
     try {
       const response = await axios.post(
-        `https://rails-d0vf.onrender.com/profiles/${id}/educations/`,
+        `https://wera.onrender.com/profiles/${id}/educations/`,
         formData
       );
       setEducationData([...educationData, response.data]);
@@ -71,7 +71,7 @@ const Education = () => {
   async function handleDeleteEducation(id) {
     try {
       await axios.delete(
-        `https://rails-d0vf.onrender.com/profiles/${id}/educations/${id}`
+        `https://wera.onrender.com/profiles/${id}/educations/${id}`
       );
       setEducationData(
         educationData.filter((education) => education.id !== id)
@@ -96,7 +96,7 @@ const Education = () => {
       );
 
       const response = await axios.patch(
-        `https://rails-d0vf.onrender.com/profiles/${id}/educations/${id}`,
+        `https://wera.onrender.com/profiles/${id}/educations/${id}`,
         formDataToUpdate,
         {
           headers: {

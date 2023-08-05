@@ -21,20 +21,18 @@ const JobCard = () => {
   // If id is present, fetch the jobseeker details and use the data, mainly the id, for application
   useEffect(() => {
     if (profileId !== null) {
-      fetch(`https://rails-d0vf.onrender.com/profiles/${profileId}`).then(
-        (res) => {
-          if (res.ok) {
-            res.json().then((data) => {
-              setProfileData(data);
-            });
-          }
+      fetch(`https://wera.onrender.com/profiles/${profileId}`).then((res) => {
+        if (res.ok) {
+          res.json().then((data) => {
+            setProfileData(data);
+          });
         }
-      );
+      });
     }
   }, [profileId]);
   // Fetch a particular job details
   useEffect(() => {
-    fetch(`https://rails-d0vf.onrender.com/opportunities/${id}`).then((res) => {
+    fetch(`https://wera.onrender.com/opportunities/${id}`).then((res) => {
       if (res.ok) {
         res.json().then((data) => {
           setJob(data);
@@ -50,7 +48,7 @@ const JobCard = () => {
       opportunity_id: parseInt(id),
     };
     // post request to the server to handle the application
-    fetch("https://rails-d0vf.onrender.com/applications", {
+    fetch("https://wera.onrender.com/applications", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

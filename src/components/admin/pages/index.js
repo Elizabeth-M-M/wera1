@@ -18,7 +18,7 @@ const Dashboard = () => {
   const [keys, setKeys] = useState([]);
   // Gives a summary sum of all the users, jobs and applications in the program
   useEffect(() => {
-    fetch(`https://rails-d0vf.onrender.com/all_summaries`).then((res) => {
+    fetch(`https://wera.onrender.com/all_summaries`).then((res) => {
       if (res.ok) {
         res.json().then((data) => {
           setSummary(data);
@@ -28,7 +28,7 @@ const Dashboard = () => {
   }, []);
   //Fetch data depending on which item is selected
   useEffect(() => {
-    fetch(`https://rails-d0vf.onrender.com/${slug}`).then((res) => {
+    fetch(`https://wera.onrender.com/${slug}`).then((res) => {
       if (res.ok) {
         res.json().then((data) => {
           setData(data);

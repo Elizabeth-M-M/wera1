@@ -28,7 +28,7 @@ const Profile = () => {
 
   useEffect(() => {
     if (id !== null) {
-      fetch(`https://rails-d0vf.onrender.com/profiles/${id}`).then((res) => {
+      fetch(`https://wera.onrender.com/profiles/${id}`).then((res) => {
         if (res.ok) {
           res.json().then((data) => {
             setProfileData(data);
@@ -54,7 +54,7 @@ const Profile = () => {
     //   formDataToUpdate.append("tags", selectedtags);
     // console.log(formDataToUpdate);
     // console.log({...formData, tags:selectedtags})
-    fetch(`https://rails-d0vf.onrender.com/profiles/${id}`, {
+    fetch(`https://wera.onrender.com/profiles/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -89,7 +89,7 @@ const Profile = () => {
 
     //   const response = await axios.patch(
 
-    //     `https://rails-d0vf.onrender.com/profiles/${id}`,
+    //     `https://wera.onrender.com/profiles/${id}`,
     //     formDataToUpdate,
     //     {
     //       headers: {
@@ -104,7 +104,7 @@ const Profile = () => {
     // }
   }
   useEffect(() => {
-    fetch(`https://rails-d0vf.onrender.com/tags`).then((res) => {
+    fetch(`https://wera.onrender.com/tags`).then((res) => {
       if (res.ok) {
         res.json().then((data) => {
           setTags(data);

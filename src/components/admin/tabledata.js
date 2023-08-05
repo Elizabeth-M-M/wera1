@@ -11,7 +11,7 @@ const Tabledata = ({ val, slug }) => {
     const formData = {
       disabled: event.target.checked,
     };
-    fetch(`https://rails-d0vf.onrender.com/${slug}/${values[0]}`, {
+    fetch(`https://wera.onrender.com/${slug}/${values[0]}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

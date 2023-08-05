@@ -53,7 +53,7 @@ const CompanyNav = () => {
   function handleSubmit(event) {
     event.preventDefault();
     console.log("submitted");
-    fetch(`https://rails-d0vf.onrender.com/employers/${id}`, {
+    fetch(`https://wera.onrender.com/employers/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -97,7 +97,7 @@ const CompanyNav = () => {
   };
   // Get employer's details
   useEffect(() => {
-    fetch(`https://rails-d0vf.onrender.com/employers/${id}`).then((res) => {
+    fetch(`https://wera.onrender.com/employers/${id}`).then((res) => {
       if (res.ok) {
         res.json().then((data) => {
           setData(data);

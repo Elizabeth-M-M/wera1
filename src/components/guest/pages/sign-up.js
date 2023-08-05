@@ -25,7 +25,7 @@ function Register({ setStoredToken }) {
       disabled: false,
     };
     // console.log(formData);
-    fetch("https://rails-d0vf.onrender.com/signup", {
+    fetch("https://wera.onrender.com/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

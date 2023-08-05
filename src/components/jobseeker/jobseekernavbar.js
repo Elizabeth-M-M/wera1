@@ -14,7 +14,7 @@ const JobseekerNavbar = () => {
   // If id is present, fetch the jobseeker details and use the full name to display on the navbar
   useEffect(() => {
     if (id !== null) {
-      fetch(`https://rails-d0vf.onrender.com/profiles/${id}`)
+      fetch(`https://wera.onrender.com/profiles/${id}`)
         .then((res) => res.json())
         .then((data) => setName(data.full_name));
     }
