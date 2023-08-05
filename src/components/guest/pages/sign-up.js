@@ -11,9 +11,6 @@ function Register({ setStoredToken }) {
   const [emailAddress, setEmailAddress] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
-  // const searchParams = new URLSearchParams(document.location.search);
-  console.log(searchParams.get("user-type"));
-
   const signUpFunctionality = (e) => {
     e.preventDefault();
     let formData = {

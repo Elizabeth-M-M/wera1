@@ -2,7 +2,7 @@
 
 ## Description
 
-This is the front end of the Wera job application site that utilises the React framework
+This is the front end of the Wera job application site that utilises the React framework. It is a clone of the original front end found [here](https://github.com/WERA-INC/wera-frontend), but cloned here due to deployment reasons.
 
 ## Contributors
 
