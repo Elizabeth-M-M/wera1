@@ -21,7 +21,7 @@ function Login({ setUser, setCompany }) {
       user_type: userType,
     };
     // console.log(formData);
-    fetch("https://rails-d0vf.onrender.com/login", {
+    fetch("https://wera.onrender.com/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
